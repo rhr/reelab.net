@@ -6,9 +6,11 @@ AUTHOR = u'Richard Ree'
 SITENAME = u'The Ree Lab @ FMNH'
 SITEURL = ''
 
+THEME='/home/rree/src/pelican-themes/pelican-simplegrey'
+
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
 
