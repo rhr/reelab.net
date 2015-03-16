@@ -6,7 +6,8 @@ AUTHOR = u'Richard Ree'
 SITENAME = u'The Ree Lab @ FMNH'
 SITEURL = ''
 
-THEME='/home/rree/src/pelican-themes/pelican-simplegrey'
+#THEME='/home/rree/src/pelican-themes/pelican-simplegrey'
+THEME='theme/pelican-bootstrap3'
 
 PATH = 'content'
 
