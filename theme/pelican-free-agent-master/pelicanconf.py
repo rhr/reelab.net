@@ -2,19 +2,24 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Richard Ree'
-SITENAME = u'The Ree Lab @ FMNH'
-SITEURL = ''
+AUTHOR = 'Free Agent'
+SITENAME = 'Free Agent'
+SITETITLE = 'Free Agent'
+SITESUBTITLE = "A bootstrap one page theme for Pelican"
+SITEURL = 'http://localhost:8000'
 
-THEME='theme/pelican-free-agent-master'
+
+THEME = 'pelican-free-agent'
 THEME_STATIC_DIR = 'theme'
-
 PATH = 'content'
+#STATIC_PATHS = [ 'mail','js', 'css', 'fonts']
+#add images back in above
+# EXTRA_PATH_METADATA = {
+#     'static/images/portfolio': {'path': 'images/portfolio'},
+#     }
+TIMEZONE = 'America/Phoenix'
 
-TIMEZONE = 'America/Chicago'
-
-DEFAULT_LANG = u'en'
-
+DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
 CSS_FILE = 'freeagent.css'
 FONTS = 'fonts'
@@ -35,35 +40,21 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
-DEFAULT_PAGINATION = 5
-
-DEFAULT_CATEGORY = 'news'
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
 DIRECT_TEMPLATES = ['index']
+DELETE_OUTPUT_DIRECTORY = True
 # Top Menu Links
 NAVLINKS = (
 	#('#page-top', 'Home'),
-	## ('#services','Services'),
-	## ('#portfolio', 'Portfolio'),
+	('#services','Services'),
+	('#portfolio', 'Portfolio'),
 	('#about', 'About'),
 	('#contact', 'Contact')
 )
 
 # Portfolio Name
 PORTFOLIO = 'Portfolio'
+
+
 
 #Contact form fields sorted by: label, input_type, id, required_validation_,msg
 CONTACT_FIELDS = (
