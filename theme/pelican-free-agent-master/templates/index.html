@@ -51,10 +51,9 @@
             <div class="col-lg-12">
                 <!--img class="img-responsive" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/profile.png" alt=""-->
                 <div class="intro-text">
-									<span class="name">{{SITETITLE}}</span>
-									<hr class="star-light">
-
-                    <span class="skills">{{SITESUBTITLE}}</span>
+		  <span class="name">Systematics, Evolution, Biogeography</span>
+		  <hr class="star-light">
+                  <!-- <span class="skills">mostly plants</span> -->
                 </div>
             </div>
         </div>
@@ -65,12 +64,12 @@
 
 {% block grid %}
 
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
+<!-- Publications Grid Section -->
+<section id="publications">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>{{PORTFOLIO}}</h2>
+                <h2>Publications</h2>
                 <hr class="star-primary">
             </div>
         </div>
@@ -177,20 +176,20 @@
 			                        <hr class="star-primary">
 			                        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive img-centered" alt=""><!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
 			                        <p>{{article.content}}</p>
-			                        <ul class="list-inline item-details">
-			                            <li>Client:
-			                                <strong><a href="{{article.client_link}}">{{article.client}}</a>
-			                                </strong>
-			                            </li>
-			                            <li>Date:
-			                                <strong><a href="http://startbootstrap.com">{{article.date}}</a>
-			                                </strong>
-			                            </li>
-			                            <li>Service:
-			                                <strong><a href="http://startbootstrap.com">{{article.service}}</a>
-			                                </strong>
-			                            </li>
-			                        </ul>
+			                        <!-- <ul class="list-inline item-details"> -->
+			                        <!--     <li>Client: -->
+			                        <!--         <strong><a href="{{article.client_link}}">{{article.client}}</a> -->
+			                        <!--         </strong> -->
+			                        <!--     </li> -->
+			                        <!--     <li>Date: -->
+			                        <!--         <strong><a href="http://startbootstrap.com">{{article.date}}</a> -->
+			                        <!--         </strong> -->
+			                        <!--     </li> -->
+			                        <!--     <li>Service: -->
+			                        <!--         <strong><a href="http://startbootstrap.com">{{article.service}}</a> -->
+			                        <!--         </strong> -->
+			                        <!--     </li> -->
+			                        <!-- </ul> -->
 			                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 			                    </div>
 			                </div>

@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Richard Ree'
-SITENAME = u'The Ree Lab @ FMNH'
+SITENAME = u'The Ree Lab @ Field Museum'
 SITEURL = ''
 
 THEME='theme/pelican-free-agent-master'
@@ -42,8 +42,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+## SOCIAL = (('You can add links in your config file', '#'),
+##           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 5
 
@@ -56,19 +56,23 @@ DIRECT_TEMPLATES = ['index']
 # Top Menu Links
 NAVLINKS = (
 	#('#page-top', 'Home'),
-	## ('#services','Services'),
+	('#news','News'),
+	('#research','Research'),
+	('#publications','Publications'),
+	('#software','Software'),
+	('#people','People'),
 	## ('#portfolio', 'Portfolio'),
-	('#about', 'About'),
-	('#contact', 'Contact')
+	## ('#about', 'About'),
+	## ('#contact', 'Contact')
 )
 
 # Portfolio Name
-PORTFOLIO = 'Portfolio'
+#PORTFOLIO = 'Recent publications'
 
 #Contact form fields sorted by: label, input_type, id, required_validation_,msg
-CONTACT_FIELDS = (
-	['Name', 'text', 'name', 'Please enter your name.'],
-	['Email Address', 'email', 'email','Please enter your email address.' ],
+## CONTACT_FIELDS = (
+## 	['Name', 'text', 'name', 'Please enter your name.'],
+## 	['Email Address', 'email', 'email','Please enter your email address.' ],
 
-	['Message', 'textarea', 'message', 'Please enter a message.']
-)
+## 	['Message', 'textarea', 'message', 'Please enter a message.']
+## )
