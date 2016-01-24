@@ -3,10 +3,11 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Richard Ree'
-SITENAME = u'The Ree Lab @ Field Museum'
+SITENAME = u'Ree Lab @ The Field Museum'
 SITEURL = ''
 
 THEME='theme/pelican-free-agent-master'
+## THEME='pure-single'
 THEME_STATIC_DIR = 'theme'
 
 PATH = 'content'
@@ -14,6 +15,7 @@ PATH = 'content'
 TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
+DEFAULT_DATE = 'fs'
 
 BOOTSTRAP_FILE = 'bootstrap.min.css'
 CSS_FILE = 'freeagent.css'
@@ -26,7 +28,7 @@ SCRIPTS = [
 	'classie.js',
 	'cbpAnimatedHeader.js',
 	'jqBootstrapValidation.js',
-	'contact_me.js',
+	## 'contact_me.js',
 	'freeagent.js'
 ]
 
@@ -53,10 +55,11 @@ DEFAULT_CATEGORY = 'news'
 #RELATIVE_URLS = True
 
 DIRECT_TEMPLATES = ['index']
+
 # Top Menu Links
 NAVLINKS = (
 	#('#page-top', 'Home'),
-	('#news','News'),
+	## ('#news','News'),
 	('#research','Research'),
 	('#publications','Publications'),
 	('#software','Software'),
@@ -76,3 +79,15 @@ NAVLINKS = (
 
 ## 	['Message', 'textarea', 'message', 'Please enter a message.']
 ## )
+
+MENUITEMS = (
+    ('Research','research'),
+    )
+
+# pure-simple config
+COVER_IMG_URL = 'images/header-bg.jpg'
+SOCIAL = (
+    ('github', 'https://github.com/rhr'),
+)
+TAGLINE = 'systematics, evolution, biogeography'
+DISPLAY_PAGES_ON_MENU = True
