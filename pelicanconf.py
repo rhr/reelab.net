@@ -46,6 +46,7 @@ MENUITEMS = (
 
 THEME = 'Flex'
 ## THEME = 'pure-single'
+## THEME = 'theme/pelican-free-agent-master'
 
 COVER_IMG_URL = '/images/pedicularis-bella.jpg'
 TAGLINE = 'systematics, evolution, biogeography'
