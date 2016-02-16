@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Richard Ree'
 SITENAME = u'Ree Lab @ The Field Museum'
-SITETITLE = u'Ree Lab @ The Field Museum'
+SITETITLE = u'Ree Lab @ Field Museum'
 SITEURL = 'http://localhost:8000'
 SITELOGO = '/images/pedicularis-bella.jpg'
 
@@ -44,12 +44,26 @@ MENUITEMS = (
 
 ## LOAD_CONTENT_CACHE = False
 
-THEME = 'Flex'
+THEME = 'theme/BT3-Flat'
+## THEME = 'Flex'
 ## THEME = 'pure-single'
 ## THEME = 'theme/pelican-free-agent-master'
 
-COVER_IMG_URL = '/images/pedicularis-bella.jpg'
-TAGLINE = 'systematics, evolution, biogeography'
+BACKGROUND_IMAGE = '/images/pedicularis-bella.jpg'
+SITESUBTITLE = 'systematics, evolution, biogeography'
 SOCIAL = (
     ('github', 'https://github.com/rhr'),
 )
+POST_LIMIT = 3
+
+ABOUT_TITLE = "systematics, evolution, biogeography"
+HEADER_IMAGE = '/images/pedicularis-bella-small-square.jpg'
+TEMPLATE_PAGES = {
+    'blog.html': 'blog.html',
+    ## 'publications.html': 'publications.html'
+    }
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ['pelican_bibtex']
+PUBLICATIONS_SRC = 'content/mypubs.bib'
+
+GSCHOLAR = 'https://scholar.google.com/citations?user=YeHSu8AAAAAJ'
