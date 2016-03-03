@@ -64,7 +64,9 @@ def add_publications(generator):
     # format entries
     plain_style = plain.Style()
     html_backend = html.Backend()
-    formatted_entries = plain_style.format_entries(bibdata_all.entries.values())
+    k = lambda x: (int(x.fields['year']), x.persons['author'][0].last_names[0])
+    entries = reversed(sorted(bibdata_all.entries.values(), key=k))
+    formatted_entries = plain_style.format_entries(entries)
 
     for formatted_entry in formatted_entries:
         key = formatted_entry.key
